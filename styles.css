@@ -105,3 +105,122 @@ header video {
     width: 600px;
     border-radius: 15px;
 }
+
+/*========== Seperator ==========*/
+
+h2.seperator {
+    padding: 0 80px;
+    margin-top: 40px;
+    font-size: 40px;
+}
+
+/*========== home-info and on show ==========*/
+
+.home-info {
+    padding: 0 80px;
+    margin: 50px 0 80px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.home-info .box,
+.on-show .vehicle {
+    padding: 20px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.home-info .box:hover,
+.on-show .vehicle:hover {
+    box-shadow: none;
+}
+
+.home-info .box .box-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.home-info .box .box-header i {
+    font-size: 40px;
+}
+
+.home-info .box .box-header h5 {
+    font-size: 18px;
+}
+
+.home-info .box p {
+    margin-top: 10px;
+    padding: 0 4px;
+}
+
+.on-show {
+    padding: 0 80px;
+    margin-top: 30px;
+}
+
+.on-show .on-show-container {
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.vehicle img {
+    height: 280px;
+    width: 280px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.on-show .on-show-container .vehicle .vehicle-info {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #edecec
+}
+
+.on-show .on-show-container .vehicle .vehicle-info h5 {
+    font-size: 18px;
+}
+
+.on-show .on-show-container .vehicle .vehicle-info .price {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.on-show .on-show-container .vehicle .price i {
+    font-size: 25px;
+    color: #820f0f;
+}
+
+.on-show .on-show-container .vehicle .price p {
+    font-size: 12px;
+    color: #820f0f;
+}
+
+.on-show .on-show-container .vehicle .view {
+    padding: 14px 0 4px;
+    float: right;
+}
+
+.on-show .on-show-container .vehicle .view a {
+    padding: 6px 10px;
+    font-size: 13px;
+    border-radius: 10px;
+
+    color: #820f0f;
+    background: transparent;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.on-show .on-show-container .vehicle .view a:hover {
+    color: #fff;
+    background-color: #000;
+}
