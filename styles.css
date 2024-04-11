@@ -224,3 +224,93 @@ h2.seperator {
     color: #fff;
     background-color: #000;
 }
+
+/*========== Footer and copyright ==========*/
+
+footer {
+    padding: 100px 80px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+
+footer h3 {
+    font-size: 18px;
+}
+
+ul.styled {
+    list-style-type: none;
+}
+
+ul.styled li {
+    padding: 8px 0;
+}
+
+ul.styled li a {
+    color: #fff;
+}
+
+#box3 .newsletter {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 0;
+}
+
+#box3 .newsletter p span a {
+    display: block;
+    padding: 8px 0;
+    color: #777;
+}
+
+#box3 .newsletter input {
+    width: 50%;
+    margin: 8px 0;
+    border-radius: 10px;
+}
+
+#box3 .newsletter button {
+    width: 150px;
+    height: 50px;
+    margin: 8px 0;
+    border: 1px solid #000;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #000;
+}
+
+#box3 .newsletter button:hover {
+    color: #000;
+    background-color: #fff;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+#box4 p {
+    padding: 8px 0;
+}
+
+#box4 a {
+    padding: 8px 0;
+    color: #fff;
+}
+
+#box4 i {
+    font-size: 25px;
+}
+
+#box4 img {
+    display: block;
+    height: 175px;
+    width: 175px;
+}
+
+#copyright p {
+    padding: 10px 0;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+}
