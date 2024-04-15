@@ -125,7 +125,11 @@ h2.seperator {
 }
 
 .home-info .box,
-.on-show .vehicle {
+.on-show .vehicle,
+.main-about .about-info,
+.main-about .sidebar-reviews,
+.main-contact .contact-info,
+.main-contact .sidebar-reviews {
     padding: 20px;
     background: #fff;
     border-radius: 18px;
@@ -134,7 +138,11 @@ h2.seperator {
 }
 
 .home-info .box:hover,
-.on-show .vehicle:hover {
+.on-show .vehicle:hover,
+.main-about .about-info:hover,
+.main-about .sidebar-reviews:hover,
+.main-contact .contact-info:hover,
+.main-contact .sidebar-reviews:hover {
     box-shadow: none;
 }
 
@@ -166,6 +174,8 @@ h2.seperator {
     padding: 40px 0;
     display: flex;
     justify-content: space-evenly;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
 .vehicle img {
@@ -313,4 +323,156 @@ ul.styled li a {
     color: #fff;
     background-color: #000;
     text-align: center;
+}
+
+/*========== Vehicles, About and contact ==========*/
+
+.vehicle-header {
+    height: 350px;
+
+    background: url(images/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 65%;
+}
+
+.about-header {
+    height: 350px;
+
+    background: url(images/vehicle-banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 20%;
+}
+
+.contact-header {
+    height: 350px;
+
+    background: url(images/contact-banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 70%;
+}
+
+.vehicle-header .vehicle-header-content,
+.about-header .about-header-content,
+.contact-header .contact-header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.733);
+}
+
+.vehicle-header-content h1,
+.about-header-content h1,
+.contact-header-content h1 {
+    font-size: 80px;
+}
+
+.vehicle-header-content p {
+    font-size: 18px;
+    padding-top: 5px;
+}
+
+.main-about,
+.main-contact {
+    padding: 0 80px;
+    margin: 50px 0 80px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-about .about-info,
+.main-contact .contact-info {
+    width: 700px;
+}
+
+.main-about .about-info span {
+    display: block;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.main-about .sidebar-reviews,
+.main-contact .sidebar-reviews {
+    height: fit-content;
+    width: 300px;
+}
+
+.main-about .sidebar-reviews h3,
+.main-contact .sidebar-reviews h3 {
+    padding: 10px 0;
+}
+
+.main-about .sidebar-reviews ul.styled,
+.main-contact .sidebar-reviews ul.styled {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.main-about .sidebar-reviews ul.styled li,
+.main-contact .sidebar-reviews ul.styled li {
+    border-top: solid 1px #e5e5e5;
+    padding: 14px 0;
+}
+
+.main-about .sidebar-reviews ul.styled li a,
+.main-contact .sidebar-reviews ul.styled li a {
+    color: #820f0f;
+}
+
+.main-contact .contact-info span {
+    padding: 10px 0;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.main-contact .contact-info ul {
+    list-style-type: none;
+    padding: 10px 10px;
+}
+
+.main-contact .contact-info ul li,
+.main-contact .contact-info p {
+    padding: 5px 0;
+}
+
+.main-contact .contact-info form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px 10px;
+}
+
+.main-contact .contact-info input.text,
+.main-contact .contact-info input.email {
+    height: 20px;
+    width: 50%;
+    border-radius: 10px;
+} 
+
+.main-contact .contact-info input.submit {
+    width: 150px;
+    height: 50px;
+    margin: 8px 0;
+    border: 1px solid #000;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #000;
+}
+
+.main-contact .contact-info input.submit:hover {
+    color: #000;
+    background-color: #fff;
+    border-radius: 20px;
+    transition: all 0.3s ease;
 }
