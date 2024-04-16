@@ -13,6 +13,7 @@ a {
 
 body {
     background-color: #f1f1f1;
+    overflow-x: hidden;
 }
 
 /*========== Nav ==========*/
@@ -129,7 +130,8 @@ h2.seperator {
 .main-about .about-info,
 .main-about .sidebar-reviews,
 .main-contact .contact-info,
-.main-contact .sidebar-reviews {
+.main-contact .sidebar-reviews,
+.vehicle-intel {
     padding: 20px;
     background: #fff;
     border-radius: 18px;
@@ -142,7 +144,8 @@ h2.seperator {
 .main-about .about-info:hover,
 .main-about .sidebar-reviews:hover,
 .main-contact .contact-info:hover,
-.main-contact .sidebar-reviews:hover {
+.main-contact .sidebar-reviews:hover,
+.vehicle-intel:hover {
     box-shadow: none;
 }
 
@@ -475,4 +478,74 @@ ul.styled li a {
     background-color: #fff;
     border-radius: 20px;
     transition: all 0.3s ease;
+}
+
+/*========== Vehicles info ==========*/
+
+.vehicle-intel {
+    width: 1000px;
+    margin: 50px auto 80px;
+    padding: 0 80px;
+}
+
+.vehicle-intel h2 {
+    font-size: 50px;
+    padding: 10px 0;
+}
+
+.vehicle-intel img {
+    width: 1000px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.vehicle-intel .vehicle-description-price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.vehicle-intel .vehicle-description-price .vehicle-description {
+    width: 600px;
+    padding: 10px 0 30px;
+}
+
+.vehicle-intel .vehicle-description-price .vehicle-description h3,
+.vehicle-intel .vehicle-description-price .vehicle-price > .price-style h3,
+.vehicle-intel .vehicle-description-price .vehicle-price > .price-style i,
+.vehicle-intel .vehicle-description-price .vehicle-price > .price-style p {
+    padding: 10px 0;
+}
+
+.vehicle-intel .vehicle-description-price .vehicle-price {
+    width: 300px;
+    padding: 10px 0 30px;
+}
+
+.vehicle-intel .vehicle-description-price .vehicle-price > .price-style {
+    display: flex;
+    justify-content: space-between;
+}
+
+.vehicle-intel .vehicle-description-price .vehicle-price button {
+    width: 150px;
+    height: 50px;
+    margin: 8px 0;
+    border: 1px solid #000;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #000;
+}
+
+.vehicle-intel .vehicle-description-price .vehicle-price button:hover {
+    color: #000;
+    background-color: #fff;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.vehicle-intel .vehicle-description-price .vehicle-price button i {
+    padding:  0 5px;
 }
