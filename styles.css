@@ -54,6 +54,10 @@ nav .login button.signup {
     margin-right: 14px;
 }
 
+nav .login button.signup a {
+    color: #fff;
+}
+
 /*========== header ==========*/
 
 header {
@@ -131,7 +135,8 @@ h2.seperator {
 .main-about .sidebar-reviews,
 .main-contact .contact-info,
 .main-contact .sidebar-reviews,
-.vehicle-intel {
+.vehicle-intel,
+.credentials {
     padding: 20px;
     background: #fff;
     border-radius: 18px;
@@ -145,7 +150,8 @@ h2.seperator {
 .main-about .sidebar-reviews:hover,
 .main-contact .contact-info:hover,
 .main-contact .sidebar-reviews:hover,
-.vehicle-intel:hover {
+.vehicle-intel:hover,
+.credentials:hover {
     box-shadow: none;
 }
 
@@ -280,6 +286,7 @@ ul.styled li a {
 #box3 .newsletter input {
     width: 50%;
     margin: 8px 0;
+    padding: 10px;
     border-radius: 10px;
 }
 
@@ -458,6 +465,9 @@ ul.styled li a {
 .main-contact .contact-info input.email {
     height: 20px;
     width: 50%;
+    padding: 10px;
+    background-color: #e2dfdf;
+    border: none;
     border-radius: 10px;
 } 
 
@@ -495,7 +505,7 @@ ul.styled li a {
 
 .vehicle-intel img {
     width: 1000px;
-    height: 400px;
+    height: 475px;
     object-fit: cover;
     border-radius: 10px;
 }
@@ -548,4 +558,66 @@ ul.styled li a {
 
 .vehicle-intel .vehicle-description-price .vehicle-price button i {
     padding:  0 5px;
+}
+
+/*========== Sign Up and Login ==========*/
+
+.credentials {
+    margin: 50px auto 80px;
+    width: 40%;
+}
+
+.credentials h1,
+.credentials p {
+    text-align: center;
+}
+
+.credentials h1 {
+    margin-top: 30px;
+    font-size: 50px;
+    color: #820f0f;
+}
+
+.credentials p {
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 450;
+}
+
+.credentials fieldset {
+    border: none;
+}
+
+.credentials fieldset input {
+    display: block;
+    width: 60%;
+    padding: 20px 10px;
+    margin: 15px auto;
+    background-color: #e2dfdf;
+    border: none;
+    border-radius: 10px;
+}
+
+.credentials .button-container {
+    margin: 20px 0;
+}
+
+.credentials .button-container button {
+    display: block;
+    margin: 0 auto;
+    width: 350px;
+    height: 50px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #000;
+}
+
+.credentials .button-container button:hover {
+    color: #000;
+    background-color: #fff;
+    border-radius: 20px;
+    transition: all 0.3s ease;
 }

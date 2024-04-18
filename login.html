@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auto4Sale | Koenigsegg Agera R</title>
     <link rel="stylesheet" href="styles.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Sign Up</title>
 </head>
 
 <body>
@@ -25,44 +25,32 @@
         </div>
     </nav>
 
-    <div class="vehicle-intel">
+    <div class="credentials">
 
-        <h2>Koenigsegg Agera R</h2>
+        <h1>Welcome Back</h1>
+        <p style="margin-bottom: 80px;">Enter your credentials to login</p>
 
-        <img src="images/Koenigsegg Agera R.webp">
+        <fieldset>
 
-        <div class="vehicle-description-price">
+            <label id="name-label" for="name"><input id="name" name="full-name" type="text"
+                    placeholder="Username" required>
+            </label>
 
-            <div class="vehicle-description">
-                <h3><strong>Description:</strong></h3>
-                <p>The Koenigsegg Agera R is a hypercar produced by the Swedish manufacturer Koenigsegg. Introduced in
-                    2011, it is renowned for its exceptional performance, advanced engineering, and luxurious design.
-                    The Agera R is powered by a twin-turbocharged V8 engine that produces an astonishing 1,140
-                    horsepower, making it one of the most powerful production cars ever built. Its lightweight carbon
-                    fiber construction and advanced aerodynamics contribute to its impressive acceleration and top
-                    speed, which exceeds 260 mph. The Agera R also features innovative technologies such as a
-                    dual-clutch transmission and active aerodynamics to enhance performance and handling. With its
-                    limited production numbers and record-breaking performance capabilities, the Koenigsegg Agera R
-                    stands as a pinnacle of automotive engineering and performance.</p>
-            </div>
+            <label id="create-password-label" for="create-password"><input id="password" name="create-password"
+                    type="password" placeholder="Create a password" required>
 
-            <div class="vehicle-price">
+        </fieldset>
 
-                <div class="price-style">
-                    <h3>Price:</h3>
-                    <p>$35m</p>
-                </div>
+        <div class="button-container">
 
-                <button>Buy<i class='bx bxs-purchase-tag-alt'></i></button>
-
-                <p style="padding: 10px 0; display: flex; justify-content: space-between;">
-                    <strong>Mileage:</strong> <i class='bx bx-tachometer'>700km</i>
-                </p>
-
-            </div>
-
+            <button>Login</button>
+            
         </div>
 
+        <p style="margin: 80px 0;"><a href="#" style="color: #820f0f;">Forgot password?</a></p>
+
+        <p style="padding: 15px;">Dont have an account? <a href="signup.html" style="color: #820f0f;">Sign Up</a></p>
+        
     </div>
 
     <footer>
@@ -94,8 +82,7 @@
                 <p>Sign up for the latest car news and specials</p>
                 <input type="email">
                 <button>Submit</button>
-                <p>By submitting, you agree to Auto4Sale's <span><a href="#">Terms of Service and Privacy
-                            Policy.</a></span></p>
+                <p>By submitting, you agree to Auto4Sale's <span><a href="#">Terms of Service and Privacy Policy.</a></span></p>
             </div>
         </div>
 
@@ -107,14 +94,14 @@
             <a href="#"><i class='bx bxl-instagram'></i></a>
             <a href="#"><i class='bx bxl-tiktok'></i></a>
             <img src="images/Black n White Luxury  Rent Car Logo.svg">
-        </div>
+          </div>
 
     </footer>
 
     <div id="copyright">
         <p>&copy; All Rights Reserved | Auto4Sale</p>
     </div>
-
+    
 </body>
 
 </html>
